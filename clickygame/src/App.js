@@ -1,31 +1,33 @@
-import React from 'react';
+import React from "react";
 // import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/navbar.js'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+import Container from "./components/Container";
+import pokemon from "./pokemon.json";
 
-function App() {
-  return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+class App extends React.Component {
+  // Setting this.state.pokemon to the pokemon json array
+  state = {
+    pokemon
+  };
 
-    <div className="">
-      <Navbar/>
-    </div>
-  );
+  render() {
+    return (
+      <Container>
+        <Navbar />
+        <div className="justify-content-center row">
+          <div className="col-8">
+            <div className="row justify-content-center">
+              {this.state.pokemon.map(pokemon => (
+              <Card id={pokemon.id} key={pokemon.id} image={pokemon.image} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </Container>
+    );
+  }
 }
 
 export default App;

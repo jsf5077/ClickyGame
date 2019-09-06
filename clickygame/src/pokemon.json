@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Pikachu",
+    "image": "https://image.flaticon.com/icons/svg/188/188987.svg"
+  },
+  {
+    "id": 2,
+    "name": "Snorlax",
+    "image": "https://image.flaticon.com/icons/svg/189/189001.svg"
+  },
+  {
+    "id": 3,
+    "name": "Charmander",
+    "image": "https://image.flaticon.com/icons/svg/188/188990.svg"
+  },
+  {
+    "id": 4,
+    "name": "Bulbasaur",
+    "image": "https://image.flaticon.com/icons/svg/188/188989.svg"
+  },
+  {
+    "id": 5,
+    "name": "Squirtle",
+    "image": "https://image.flaticon.com/icons/svg/188/188988.svg"
+  },
+  {
+    "id": 6,
+    "name": "Eevee",
+    "image": "https://image.flaticon.com/icons/svg/188/188995.svg"
+  },
+  {
+    "id": 7,
+    "name": "Mew",
+    "image": "https://image.flaticon.com/icons/svg/189/189006.svg"
+  },
+  {
+    "id": 8,
+    "name": "Dratini",
+    "image": "https://image.flaticon.com/icons/svg/188/188996.svg"
+  },
+  {
+    "id": 9,
+    "name": "Jigglypuff",
+    "image": "https://image.flaticon.com/icons/svg/188/188993.svg"
+  },
+  {
+    "id": 10,
+    "name": "Meowth",
+    "image": "https://image.flaticon.com/icons/svg/188/188997.svg"
+  },
+  {
+    "id": 11,
+    "name": "Abra",
+    "image": "https://image.flaticon.com/icons/svg/189/189002.svg"
+  },
+  {
+    "id": 12,
+    "name": "Mankey",
+    "image": "https://image.flaticon.com/icons/svg/188/188994.svg"
+  }
+]
