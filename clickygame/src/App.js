@@ -12,6 +12,14 @@ class App extends React.Component {
     pokemon
   };
 
+  shuffle = id => {
+    this.setState({
+      pokemon: this.state.pokemon.sort(function(a, b) {
+        return 0.5 - Math.random();
+      })
+    });
+  };
+
   render() {
     return (
       <Container>
@@ -20,7 +28,7 @@ class App extends React.Component {
           <div className="col-8">
             <div className="row justify-content-center">
               {this.state.pokemon.map(pokemon => (
-              <Card id={pokemon.id} key={pokemon.id} image={pokemon.image} />
+              <Card id={pokemon.id} key={pokemon.id} image={pokemon.image} shuffle={this.shuffle}/>
               ))}
             </div>
           </div>
@@ -29,5 +37,7 @@ class App extends React.Component {
     );
   }
 }
+
+
 
 export default App;
