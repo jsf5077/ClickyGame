@@ -7,6 +7,11 @@ import Card from "./components/Card";
 import Container from "./components/Container";
 import pokemon from "./pokemon.json";
 
+// ES6 Modules or TypeScript
+import Swal from 'sweetalert2'
+
+let checker = 0;
+
 class App extends React.Component {
   constructor() {
     super();
@@ -14,7 +19,8 @@ class App extends React.Component {
       score: 0,
       topScore: 0,
       pokeSelected: [],
-      pokemon
+      pokemon,
+      show: false
     };
   }
 
@@ -26,16 +32,22 @@ class App extends React.Component {
     });
   };
 
- 
   pokePic = id => {
     console.log(id + " caught!");
     let selected = this.state.pokeSelected;
     if (selected.includes(id)) {
       console.log("uh oh! This pokemon has already been caught!");
-      if(this.state.score > this.state.topScore) {
+      Swal.fire({
+        title: 'uh oh!',
+        text: 'This pokemon has already been caught!',
+        type: 'error',
+        confirmButtonText: 'Cool'
+      })
+      checker = 0;
+      if (this.state.score > this.state.topScore) {
         this.setState({
           topScore: this.state.score
-        })
+        });
       }
       this.setState({
         score: 0,
@@ -45,18 +57,28 @@ class App extends React.Component {
       selected.push(id);
       console.log(selected);
       this.setState({
-        score: this.state.score + 1})
-      if(this.state.score === 12) {
-        console.log("Yay! You won! congrats!")
-        if(this.state.score > this.state.topScore) {
+        score: this.state.score + 1
+      });
+      checker ++;
+      if (checker === 12) {
+        console.log("Yay! You won! congrats!");
+        Swal.fire({
+          title: 'Congratulations!',
+          text: 'You caught them all',
+          type: 'success',
+          confirmButtonText: 'Cool'
+        })
+        if (this.state.score > this.state.topScore) {
           this.setState({
             topScore: this.state.score
-          })
+          });
         }
         this.setState({
           score: 0,
-          selected: []
+          selected: [],
+          topScore: 12
         });
+        checker = 0;
       }
     }
   };
