@@ -26,16 +26,38 @@ class App extends React.Component {
     });
   };
 
+ 
   pokePic = id => {
     console.log(id + " caught!");
     let selected = this.state.pokeSelected;
     if (selected.includes(id)) {
       console.log("uh oh! This pokemon has already been caught!");
-      selected.length = 0;
-      console.log(selected);
+      if(this.state.score > this.state.topScore) {
+        this.setState({
+          topScore: this.state.score
+        })
+      }
+      this.setState({
+        score: 0,
+        selected: []
+      });
     } else {
       selected.push(id);
       console.log(selected);
+      this.setState({
+        score: this.state.score + 1})
+      if(this.state.score === 12) {
+        console.log("Yay! You won! congrats!")
+        if(this.state.score > this.state.topScore) {
+          this.setState({
+            topScore: this.state.score
+          })
+        }
+        this.setState({
+          score: 0,
+          selected: []
+        });
+      }
     }
   };
 
