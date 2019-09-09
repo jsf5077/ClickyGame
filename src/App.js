@@ -5,7 +5,7 @@ import Jumbotron from "./components/Jumbotron";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import Container from "./components/Container";
-import pokemon from "./pokemon.json";
+import pokemon from "./pokemon.json.js";
 
 // ES6 Modules or TypeScript
 import Swal from 'sweetalert2'
