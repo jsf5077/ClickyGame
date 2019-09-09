@@ -17,10 +17,6 @@ class App extends React.Component {
       pokemon
     };
   }
-  // Setting this.state.pokemon to the pokemon json array
-  // state = {
-  //   pokemon
-  // };
 
   shuffle = id => {
     this.setState({
@@ -30,24 +26,18 @@ class App extends React.Component {
     });
   };
 
-  pokePic= id => {
-
-    console.log (id + " caught!")
+  pokePic = id => {
+    console.log(id + " caught!");
     let selected = this.state.pokeSelected;
-    for ( let i = 0; i < selected.length; i++) {
-      if(id !== selected[i]) {
-        selected.push(id);
-      console.log(id + " inserted into array");
-      console.log("poke Array: " + selected);
-      } else {
-        console.log("uh oh! This pokemon has already been caught!");
-        this.setState({selected: []});
-        console.log("poke Array: " + selected)
-
-      }
+    if (selected.includes(id)) {
+      console.log("uh oh! This pokemon has already been caught!");
+      selected.length = 0;
+      console.log(selected);
+    } else {
+      selected.push(id);
+      console.log(selected);
     }
-
-  }
+  };
 
   render() {
     return (
