@@ -1,12 +1,25 @@
 import React from "react";
+import "./style.css";
 
-function Navbar() {
+function Navbar(props) {
   return (
-    <nav className="navbar-dark bg-dark sticky-top">
-      <a className="navbar-brand p-2 pl-3" href="/">
-        <h1>Clicky Game</h1>
-      </a>
-    </nav>
+    <ul className="nav sticky-top nav-pills nav-fill">
+      <li className="nav-item">
+        <h3 className="nav-link" href="#">
+          PokeCatch
+        </h3>
+      </li>
+      <li className="nav-item">
+        <h3 className="nav-link" href="#">
+          Click a Pokemon to catch it
+        </h3>
+      </li>
+      <li className="nav-item">
+        <h3 className="nav-link" href="#">
+          Score: {props.score} | Top Score: {props.topScore}
+        </h3>
+      </li>
+    </ul>
   );
 }
 

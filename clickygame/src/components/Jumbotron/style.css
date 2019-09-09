@@ -1,0 +1,13 @@
+.jumbotron {
+  background-color: rgb(39, 70, 173);
+}
+
+h1 {
+  font-size: 6rem;
+  color: white;
+}
+
+#subtitle {
+  font-size: 2rem;
+  color: white;
+}
