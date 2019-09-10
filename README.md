@@ -1,4 +1,4 @@
-# Twin Peaks Clicky Game
+# PokeCatch Clicky Game
 Can you catch all the Pokemon?  Let's put your Pokemon Trainer skills to the test with this memory clicky game.
 
 ## What is this?
