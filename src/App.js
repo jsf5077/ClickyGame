@@ -12,6 +12,7 @@ import Swal from 'sweetalert2'
 
 let checker = 0;
 
+
 class App extends React.Component {
   constructor() {
     super();
