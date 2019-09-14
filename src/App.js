@@ -52,8 +52,9 @@ class App extends React.Component {
       }
       this.setState({
         score: 0,
-        selected: []
+        pokeSelected: []
       });
+
     } else {
       selected.push(id);
       console.log(selected);
@@ -76,7 +77,7 @@ class App extends React.Component {
         }
         this.setState({
           score: 0,
-          selected: [],
+          pokeSelected: [],
           topScore: 12
         });
         checker = 0;
