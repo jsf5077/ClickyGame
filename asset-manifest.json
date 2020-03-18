@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PokeCatch/static/css/main.4a575afe.chunk.css",
+    "main.js": "/PokeCatch/static/js/main.780b3fdb.chunk.js",
+    "main.js.map": "/PokeCatch/static/js/main.780b3fdb.chunk.js.map",
+    "runtime-main.js": "/PokeCatch/static/js/runtime-main.d0683fb6.js",
+    "runtime-main.js.map": "/PokeCatch/static/js/runtime-main.d0683fb6.js.map",
+    "static/js/2.999038b7.chunk.js": "/PokeCatch/static/js/2.999038b7.chunk.js",
+    "static/js/2.999038b7.chunk.js.map": "/PokeCatch/static/js/2.999038b7.chunk.js.map",
+    "index.html": "/PokeCatch/index.html",
+    "precache-manifest.ed9e2877dad503c7bbd986bbf5c00517.js": "/PokeCatch/precache-manifest.ed9e2877dad503c7bbd986bbf5c00517.js",
+    "service-worker.js": "/PokeCatch/service-worker.js",
+    "static/css/main.4a575afe.chunk.css.map": "/PokeCatch/static/css/main.4a575afe.chunk.css.map",
+    "static/js/2.999038b7.chunk.js.LICENSE.txt": "/PokeCatch/static/js/2.999038b7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0683fb6.js",
+    "static/js/2.999038b7.chunk.js",
+    "static/css/main.4a575afe.chunk.css",
+    "static/js/main.780b3fdb.chunk.js"
+  ]
+}
