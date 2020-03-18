@@ -1,6 +1,6 @@
 {
-  "name": "clickygame",
   "homepage": "http://jsf5077.github.io/PokeCatch",
+  "name": "clickygame",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
